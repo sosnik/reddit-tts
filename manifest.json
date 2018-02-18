@@ -1,0 +1,15 @@
+{
+
+  "manifest_version": 2,
+  "name": "reddit-tts",
+  "version": "0.1",
+
+  "description": "Uses the speechSynthesis javascript API to read reddit comments and posts.",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["jquery-3.1.1.slim.min.js","reddit-tts.js"]
+    }
+  ]
+}
